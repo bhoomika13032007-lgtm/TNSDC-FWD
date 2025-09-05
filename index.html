@@ -1,52 +1,179 @@
 <!DOCTYPE html>
-<html lang="en" >
+
+<html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
-  <title>Toast Notification Playground 🍞🔔</title>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&amp;display=swap'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>P. Bhoomika | Portfolio</title>
+
+  <link rel="stylesheet" href="styles.css">
 
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<div class="playground">
-	<div class="header-image">
-		<img src="http://mattcannon.games/codepen/toast/tt.png" alt="Toast Notification Playground">
-	</div>
 
-	<div class="section">
-		<h3><i class="fa-solid fa-palette"></i> Theme</h3>
-		<div class="grid" id="theme-buttons">
-			<button data-theme="arcade" class="modern-btn"><i class="fa-solid fa-gamepad"></i> Arcade</button>
-			<button data-theme="professional" class="modern-btn"><i class="fa-solid fa-briefcase"></i> Professional</button>
-			<button data-theme="brutalist" class="modern-btn"><i class="fa-solid fa-cube"></i> Brutalist</button>
-			<button data-theme="glass" class="modern-btn"><i class="fa-solid fa-wine-glass"></i> Glass</button>
-			<button data-theme="neon" class="modern-btn"><i class="fa-solid fa-bolt-lightning"></i> Neon</button>
-		</div>
-	</div>
+  <!-- Header -->
 
-	<div class="section">
-		<h3><i class="fa-solid fa-bolt"></i> Animation</h3>
-		<div class="grid" id="animation-buttons">
-			<button data-animation="slide" class="modern-btn"><i class="fa-solid fa-arrow-up"></i> Slide</button>
-			<button data-animation="bounce" class="modern-btn"><i class="fa-solid fa-arrows-rotate"></i> Bounce</button>
-			<button data-animation="fade" class="modern-btn"><i class="fa-solid fa-water"></i> Fade</button>
-			<button data-animation="flip" class="modern-btn"><i class="fa-solid fa-retweet"></i> Flip</button>
-			<button data-animation="zoom" class="modern-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> Zoom</button>
-		</div>
-	</div>
+  <header class="header">
 
-	<div class="btn-wrap">
-		<button class="launch-btn" onclick="showToast()">
-			<i class="fa-solid fa-bread-slice"></i> Let's Get Toasted
-		</button>
-	</div>
+    <div class="container nav">
 
-	<div id="toast-container"></div>
-</div>
-<!-- partial -->
-  <script  src="./script.js"></script>
+      <h1 class="brand">P. Bhoomika</h1>
+
+      <nav class="nav-links">
+
+        <a href="#about">About</a>
+
+        <a href="#skills">Skills</a>
+
+        <a href="#contact">Contact</a>
+
+        <button id="theme-toggle" class="btn secondary">🌙</button>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <!-- Hero -->
+
+  <section class="hero container">
+
+    <div>
+
+      <p class="kicker">Welcome to my portfolio</p>
+
+      <h1>Hello, I'm <span class="text-primary">P. Bhoomika</span></h1>
+
+      <p class="lead">
+
+        A passionate <b>BCA student</b> at R.B.Gothi Jain College for Women, 
+
+        aspiring to become a <b>Software Developer</b>.
+
+      </p>
+
+      <a href="#contact" class="btn">Get in Touch</a>
+
+    </div>
+
+    <div>
+
+      <img src="https://via.placeholder.com/400x300" alt="Portfolio image" class="card">
+
+    </div>
+
+  </section>
+
+  <!-- About -->
+
+  <section id="about" class="container stack">
+
+    <h2 class="h2">About Me</h2>
+
+    <p>
+
+      I am currently pursuing a Bachelor degree in Computer Applications at 
+
+      <b>R.B.Gothi Jain College for Women</b>. I completed my schooling at 
+
+      <b>Government Higher Secondary School, Vengal</b>.
+
+    </p>
+
+    <p>
+
+      My ambition is to become a skilled <b>Software Developer</b> in the IT field. 
+
+      I am continuously learning and looking forward to gaining more hands-on experience.
+
+    </p>
+
+  </section>
+
+  <!-- Skills -->
+
+  <section id="skills" class="container stack">
+
+    <h2 class="h2">My Skills & Ambition</h2>
+
+    <div class="grid">
+
+      <div class="card grid-3">
+
+        <h3>Web Development</h3>
+
+        <p>Learning HTML, CSS, JavaScript to build modern websites.</p>
+
+      </div>
+
+      <div class="card grid-3">
+
+        <h3>Programming</h3>
+
+        <p>Improving coding skills to prepare for IT industry roles.</p>
+
+      </div>
+
+      <div class="card grid-3">
+
+        <h3>Career Goal</h3>
+
+        <p>To work as a Software Developer in a reputed IT company.</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+
+  <section id="contact" class="container stack">
+
+    <h2 class="h2">Get in Touch</h2>
+
+    <form class="stack" id="contact-form">
+
+      <label>Name
+
+        <input type="text" name="name" class="input" required>
+
+      </label>
+
+      <label>Email
+
+        <input type="email" name="email" class="input" required>
+
+      </label>
+
+      <label>Message
+
+        <textarea name="message" rows="4" class="input" required></textarea>
+
+      </label>
+
+      <button type="submit" class="btn">Send Message</button>
+
+    </form>
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="footer container">
+
+    <p>© 2025 P. Bhoomika. All rights reserved.</p>
+
+  </footer>
+
+  <script src="app.js"></script>
 
 </body>
+
 </html>
